@@ -1,0 +1,1 @@
+./Debug/fuzzy.cpp.o ./Debug/point.cpp.o ./Debug/main.cpp.o ./Debug/line.cpp.o
