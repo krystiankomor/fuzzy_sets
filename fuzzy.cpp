@@ -15,17 +15,17 @@ Fuzzy::Fuzzy(const double p[], int s, bool b = false)
 	{
 		tmpX = *(p + i);
 		tmpY = *(p + i + 1);
-		
+
 		points.push_back(Point(tmpX, tmpY));
-		
+
 		if(i == 0 || tmpY > height)
 		{
 			height = tmpY;
 		}
 	}
-	
+
 	sort(points.begin(), points.end());
-	
+
 	for(int i = 0; i < s; i++)
 	{
 		normalizedPoints.push_back(Point(points[i], height));
@@ -78,13 +78,13 @@ void Fuzzy::showCore()
 			}
 		}
 	}
-	
+
 	cout << endl;
 }
 void Fuzzy::showHeight()
 {
 	cout << "u(A) = " << height << " at x";
-	
+
 	Point * p;
 	luint limit = points.size();
 	for(luint i = 0; i < limit; i++)
@@ -165,15 +165,15 @@ void Fuzzy::showSupp()
 		{
 			if(i == 0) cout << "[" << p->getX();
 			else cout << "(" << (p - 1)->getX();
-			
+
 			cout << ",";
-			
+
 			int i2 = 1;
 			while(i + i2 < limit && (p + i2)->getY() > 0)
 			{
 				++i2;
 			}
-			if(i + i2  == limit) 
+			if(i + i2  == limit)
 			{
 				cout << (p + i2 - 1)->getX() << "]";
 			}
@@ -184,7 +184,6 @@ void Fuzzy::showSupp()
 			i = i + i2;
 		}
 	}
-	
+
 	cout << endl;
 }
-
