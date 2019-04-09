@@ -10,7 +10,7 @@ Line::Line(Point p1, Point p2)
 	double x2 = p2.getX();
 	double y1 = p1.getY();
 	double y2 = p2.getY();
-	
+
 	if(x1 != x2)
 	{
 		a = (y2 - y1) / (x2 - x1);
@@ -21,7 +21,7 @@ Line::Line(Point p1, Point p2)
 		x = x1;
 		onlyX = true;
 	}
-	
+
 }
 
 Line::~Line()
@@ -58,7 +58,7 @@ void Line::show(bool newLine)
 			else if(b < 0)
 			{
 				cout << "- " << (-1 * b);
-			}	
+			}
 		}
 		else
 		{

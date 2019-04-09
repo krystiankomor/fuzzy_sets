@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include <point.h>
+#include "point.h"
 
 using namespace std;
 
@@ -20,4 +20,3 @@ private:
 	double b = 0;
 	double x = 0;
 };
-

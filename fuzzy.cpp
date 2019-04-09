@@ -5,7 +5,7 @@ Fuzzy::Fuzzy()
 {
 }
 
-Fuzzy::Fuzzy(const double p[], int s, bool b = false)
+Fuzzy::Fuzzy(const double * p, const int & s, const bool & b = false)
 {
 	double tmpX, tmpY;
 

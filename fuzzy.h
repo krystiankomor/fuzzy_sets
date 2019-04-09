@@ -14,7 +14,7 @@ class Fuzzy
 {
 public:
 	Fuzzy();
-	Fuzzy(const double [], int, bool);
+	Fuzzy(const double *, const int &, const bool &);
 	~Fuzzy();
 	bool isNormal();
 	void showCore();
@@ -31,4 +31,3 @@ private:
 	vector<Line> lines;
 	vector<Line> normalizedLines;
 };
-
