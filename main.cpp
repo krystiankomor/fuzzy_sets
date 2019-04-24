@@ -4,10 +4,10 @@
 
 int main()
 {
-	int POINTS = 0;
+	int NUMBER_OF_POINTS = 0;
 	cout << "No. of points: ";
-	cin >> POINTS;
-	int VALUES = POINTS * 2;
+	cin >> NUMBER_OF_POINTS;
+	int VALUES = NUMBER_OF_POINTS * 2;
 	double * points = new double[VALUES];
 	double tmp;
 	for(int i = 0; i < VALUES; i++)
@@ -16,7 +16,7 @@ int main()
 		points[i] = tmp;
 	}
 
-	Fuzzy * fuzzySet = new Fuzzy(points, POINTS, false);
+	Fuzzy * fuzzySet = new Fuzzy(points, NUMBER_OF_POINTS, false);
 
 	cout << "Points:" << endl;
 	fuzzySet->showPoints();
